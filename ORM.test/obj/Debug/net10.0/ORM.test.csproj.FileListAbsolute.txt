@@ -160,3 +160,4 @@ C:\Users\Nurlan\source\repos\ORM.test\ORM.test\obj\Debug\net10.0\refint\ORM.test
 C:\Users\Nurlan\source\repos\ORM.test\ORM.test\obj\Debug\net10.0\ORM.test.pdb
 C:\Users\Nurlan\source\repos\ORM.test\ORM.test\obj\Debug\net10.0\ORM.test.genruntimeconfig.cache
 C:\Users\Nurlan\source\repos\ORM.test\ORM.test\obj\Debug\net10.0\ref\ORM.test.dll
+C:\Users\Nurlan\source\repos\ORM.test\ORM.test\obj\Debug\net10.0\ORM.test.sourcelink.json
