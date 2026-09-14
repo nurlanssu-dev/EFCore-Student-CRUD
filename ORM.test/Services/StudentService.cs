@@ -76,26 +76,6 @@ public class StudentService
     }
 
 
-    // Update Student Age
-    public void UpdateStudentAge(int id, int newAge)
-    {
-        var student = _context.Students
-            .FirstOrDefault(s => s.Id == id);
-
-        if (student != null)
-        {
-            student.Age = newAge;
-            _context.SaveChanges();
-
-            Console.WriteLine("Student age updated successfully.");
-        }
-        else
-        {
-            Console.WriteLine("Student not found.");
-        }
-    }
-
-
     // Delete Student
     public void DeleteStudent(int id)
     {
@@ -115,6 +95,62 @@ public class StudentService
         }
     }
 
+    // update student group
+    public void UpdateStudent(int id, string name, int age, int groupId)
+    {
+        var student = _context.Students
+            .FirstOrDefault(s => s.Id == id);
+
+        if (student != null)
+        {
+            var group = _context.Groups
+                .FirstOrDefault(g => g.Id == groupId);
+
+            if (group == null)
+            {
+                Console.WriteLine("Group not found.");
+                return;
+            }
+
+            student.Name = name;
+            student.Age = age;
+            student.GroupId = groupId;
+
+            _context.SaveChanges();
+
+            Console.WriteLine("Student updated successfully.");
+        }
+        else
+        {
+            Console.WriteLine("Student not found.");
+        }
+    }
+
+    // ChangeStudentGroup
+
+
+    public void ChangeStudentGroup(int studentId, int newGroupId)
+    {
+        var student = _context.Students
+            .FirstOrDefault(s => s.Id == studentId);
+        if (student != null)
+        {
+            var group = _context.Groups
+                .FirstOrDefault(g => g.Id == newGroupId);
+            if (group == null)
+            {
+                Console.WriteLine("Group not found.");
+                return;
+            }
+            student.GroupId = newGroupId;
+            _context.SaveChanges();
+            Console.WriteLine("Student group changed successfully.");
+        }
+        else
+        {
+            Console.WriteLine("Student not found.");
+        }
+    }
 
     // Pagination
     public List<Student> GetStudentsByPage(int pageNumber)

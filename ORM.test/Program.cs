@@ -129,47 +129,32 @@ using ORM.test.Services;
 #endregion
 
 //#region tasklarin service icinde yazilib methodlarin cagirildigi yer
-appdbcontext context = new appdbcontext();
 
-var studentservice = new studentservice(context);
+var context = new AppDbContext();
 
-studentservice.addstudent("snurlan", 28, 1);
-//studentService.GetStudentByName("SNurlan");
+var studentService = new StudentService(context);
+var groupService = new GroupService(context);
+
+//groupService.AddGroup("Group 1");
+//studentService.AddStudent("Nurlan Suleymanov", 28, 1);
+//groupService.GetStudentsByGroup(1);
+
+//groupService.AddGroup("Group 2");
+//groupService.AddGroup("Group 3");
+//groupService.AddGroup("Group 4");
+//studentService.AddStudent("Vusal Aliyev", 22, 2);
+//studentService.AddStudent("Aysel Mammadova", 23, 3);
+//studentService.AddStudent("Elvin Huseynov", 24, 4);
+
 //studentService.GetAllStudents();
-//studentService.UpdateStudentAge(1, 30);
-//studentService.DeleteStudent(1);
-//studentService.GetStudentsByPage(1);
+//groupService.GetAllGroups();
 
+//studentService.GetStudentByName("Nurlan Suleymanov");
 
+//groupService.UpdateGroup(1, "C#");
 
+//studentService.GetAllStudents();
 //#endregion
 
-//AppDbContext context = new AppDbContext();
 
-//var group = new Group
-//{
-//    Name = "Frontend"
-//};
-
-//context.Groups.Add(group);
-//context.SaveChanges();
-
-//var student = new Student
-//{
-//    Name = "Vusal",
-//    Age = 22,
-//    GroupId = group.Id
-//};
-
-//context.Students.Add(student);
-//context.SaveChanges();
-
-//var students = context.Students
-//    .Include(s => s.Group)
-//    .ToList();
-
-//foreach (var s in students)
-//{
-//    Console.WriteLine($"{s.Name} - {s.Group.Name}");
-//}
 
