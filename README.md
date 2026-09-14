@@ -1,181 +1,306 @@
 # Student Management System
 
-A console-based **Student Management System** developed with **C# and SQL Server**.
+A console-based **Student Management System** developed with **C# and Entity Framework Core**.
 
-The project demonstrates database connectivity, CRUD operations, ORM usage, raw SQL queries, and pagination in a simple console application.
+The project demonstrates database connectivity, ORM usage, CRUD operations, One-to-Many relationships, Fluent API configuration, LINQ queries, and pagination using SQL Server.
 
 ---
 
-## Project Overview
+# Project Overview
 
-The application allows users to manage student records stored in a SQL Server database.
+The application manages students and groups stored in a SQL Server database.
 
-Each student contains the following information:
+The project contains two main entities:
 
-| Column | Type   | Description       |
-| ------ | ------ | ----------------- |
-| `Id`   | int    | Unique identifier |
-| `Name` | string | Student name      |
-| `Age`  | int    | Student age       |
+- Student
+- Group
 
-### Students Table
+A **Group can contain multiple Students**, creating a One-to-Many relationship.
 
-```text
+---
+
+# Database Relationship
+
+```
+Group
+ |
+ |---- Student
+ |---- Student
+ |---- Student
+```
+
+Relationship:
+
+```
+One Group  →  Many Students
+```
+
+---
+
+# Entities
+
+## Student Entity
+
+| Column | Type | Description |
+|---|---|---|
+| Id | int | Unique identifier |
+| Name | string | Student name |
+| Age | int | Student age |
+| GroupId | int | Foreign Key |
+
+Example:
+
+```
 Students
---------
+---------
 Id
 Name
 Age
+GroupId
 ```
 
 ---
 
-## Technologies Used
+## Group Entity
 
-* C#
-* .NET
-* SQL Server
-* ORM / Entity Framework
-* ADO.NET
-* SQL
-* Console Application
+| Column | Type | Description |
+|---|---|---|
+| Id | int | Unique identifier |
+| Name | string | Group name |
 
----
+Example:
 
-# Features
-
-The project consists of seven main tasks.
-
-## Task 1 — Database Connection & ORM Setup
-
-The application is connected to a SQL Server database and the required ORM configuration is created.
-
-Main responsibilities:
-
-* Configure the database connection
-* Create the `Student` entity
-* Configure the database context
-* Map the `Students` table
-* Prepare the application for database operations
-
----
-
-## Task 2 — Insert Student
-
-The application reads a student's **Name** and **Age** from the console and inserts the new student into the database.
-
-### Example
-
-```text
-Enter student name:
-Ali
-
-Enter student age:
-20
-
-Student added successfully.
 ```
-
-The inserted data is stored in the `Students` table.
-
----
-
-## Task 3 — Get All Students
-
-All students stored in the database are retrieved and displayed in the console.
-
-> **Note:** This task is implemented using ORM instead of manually reading the data with `SqlCommand`, `ExecuteReader()` and `SqlDataReader`.
-
-The ORM retrieves the collection of students from the `Students` table and the application displays each record.
-
-### Example Output
-
-```text
-1 Ali 20
-2 Leyla 21
-3 Murad 19
-```
-
-This implementation demonstrates how ORM can simplify data retrieval by mapping database records directly to C# objects.
-
----
-
-## Task 4 — Search Student
-
-The application asks the user to enter a student name.
-
-The database is searched for a matching student and the result is displayed in the console.
-
-### Example
-
-```text
-Enter student name:
-Ali
-```
-
-### Output
-
-```text
-1 Ali 20
-```
-
-If no matching student exists, the application informs the user that the student was not found.
-
----
-
-## Task 5 — Update Student
-
-The user enters:
-
-* Student `Id`
-* New `Age`
-
-The application finds the corresponding student and updates the age in the database.
-
-### Example
-
-```text
-Enter student id:
-1
-
-Enter new age:
-21
-
-Student updated successfully.
+Groups
+---------
+Id
+Name
 ```
 
 ---
 
-## Task 6 — Delete Student
+# Technologies Used
 
-The application deletes a student using the entered student ID.
-
-### Example
-
-```text
-Enter student id:
-3
-
-Student deleted.
-```
-
-If a student with the specified ID does not exist, an appropriate message is displayed.
+- C#
+- .NET
+- Entity Framework Core
+- SQL Server
+- LINQ
+- ORM
+- Fluent API
+- Console Application
 
 ---
 
-## Task 7 — Pagination
+# Project Structure
 
-The student list is divided into pages.
+```
+ORM.test
 
-The page size is:
-
-```text
-Page Size: 3
+│
+├── Models
+│   ├── Student.cs
+│   └── Group.cs
+│
+├── DATA
+│   ├── AppDbContext.cs
+│   └── Configurations
+│       ├── StudentConfiguration.cs
+│       └── GroupConfiguration.cs
+│
+├── Services
+│   ├── StudentService.cs
+│   └── GroupService.cs
+│
+└── Program.cs
 ```
 
-### Example
+---
 
-```text
+# Entity Relationship Configuration
+
+The relationship is configured using Fluent API.
+
+Example:
+
+```csharp
+builder.HasOne(s => s.Group)
+       .WithMany(g => g.Students)
+       .HasForeignKey(s => s.GroupId);
+```
+
+This configuration creates:
+
+```
+Group 1 ---- N Students
+```
+
+---
+
+# Student CRUD Operations
+
+## Create Student
+
+Adds a new student with a selected group.
+
+Example:
+
+```csharp
+AddStudent("Nurlan Suleymanov", 28, 1);
+```
+
+---
+
+## Read Students
+
+Implemented operations:
+
+- Get All Students
+- Search Student By Name
+- Display Student with Group information
+
+Example output:
+
+```
+ID: 1
+Name: Nurlan Suleymanov
+Age: 28
+Group: Group 1
+```
+
+---
+
+## Update Student
+
+Updates:
+
+- Student Name
+- Student Age
+- Student Group
+
+Example:
+
+```csharp
+UpdateStudent(1,"Nurlan Updated",30,2);
+```
+
+---
+
+## Delete Student
+
+Deletes student by ID.
+
+Example:
+
+```csharp
+DeleteStudent(1);
+```
+
+---
+
+# Group CRUD Operations
+
+## Create Group
+
+Example:
+
+```csharp
+AddGroup("Group 1");
+```
+
+---
+
+## Read Groups
+
+Implemented:
+
+- Get All Groups
+- Get Group By Id
+
+---
+
+## Update Group
+
+Example:
+
+```csharp
+UpdateGroup(1,"C# Backend");
+```
+
+---
+
+## Delete Group
+
+Deletes group by ID.
+
+---
+
+# Relationship Operations
+
+The project includes operations between Student and Group.
+
+## Add Student To Group
+
+When creating a student, GroupId is assigned.
+
+Example:
+
+```csharp
+AddStudent("Ali",20,1);
+```
+
+---
+
+## Change Student Group
+
+Moves a student from one group to another.
+
+Example:
+
+```csharp
+ChangeStudentGroup(1,3);
+```
+
+---
+
+## Get Students By Group
+
+Displays all students inside a group.
+
+Example:
+
+```
+Group: C#
+
+Students:
+
+1 Ali
+2 Murad
+3 Leyla
+```
+
+---
+
+# Pagination
+
+Students can be displayed page by page.
+
+Page size:
+
+```
+3 students per page
+```
+
+Implementation:
+
+```csharp
+Skip()
+Take()
+```
+
+Example:
+
+```
 Page 1
 
 1 Ali
@@ -183,84 +308,74 @@ Page 1
 3 Leyla
 ```
 
-Pagination is implemented at the SQL level using:
-
-```sql
-OFFSET
-FETCH NEXT
-```
-
-Example query structure:
-
-```sql
-SELECT Id, Name, Age
-FROM Students
-ORDER BY Id
-OFFSET @Offset ROWS
-FETCH NEXT @PageSize ROWS ONLY;
-```
-
-This approach retrieves only the records required for the requested page instead of loading the entire table into memory.
-
----
-
-# CRUD Operations
-
-The application demonstrates the four fundamental database operations:
-
-| Operation | Feature                  |
-| --------- | ------------------------ |
-| Create    | Insert Student           |
-| Read      | Get All / Search Student |
-| Update    | Update Student           |
-| Delete    | Delete Student           |
-
 ---
 
 # Application Flow
 
-```text
-Student Management System
+Example service usage:
 
-1. Add Student
-2. Get All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Show Students with Pagination
-0. Exit
+```csharp
+var context = new AppDbContext();
+
+var studentService = new StudentService(context);
+var groupService = new GroupService(context);
+
+
+groupService.AddGroup("Group 1");
+
+studentService.AddStudent(
+    "Nurlan Suleymanov",
+    28,
+    1
+);
+
+studentService.GetAllStudents();
+
+groupService.GetStudentsByGroup(1);
 ```
-
-The user selects an operation from the console menu and the corresponding database action is executed.
 
 ---
 
-# Example Student Data
+# CRUD Summary
 
-| Id | Name  | Age |
-| -: | ----- | --: |
-|  1 | Ali   |  20 |
-|  2 | Leyla |  21 |
-|  3 | Murad |  19 |
+| Entity | Create | Read | Update | Delete |
+|---|---|---|---|---|
+| Student | ✅ | ✅ | ✅ | ✅ |
+| Group | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+# Concepts Demonstrated
+
+This project demonstrates:
+
+- Entity Framework Core
+- ORM concepts
+- Database connection
+- Entity relationships
+- Foreign Keys
+- Navigation Properties
+- Fluent API
+- CRUD operations
+- LINQ queries
+- Service Layer architecture
+- Pagination
+- SQL Server integration
 
 ---
 
 # Database Configuration
 
-Before running the project, make sure SQL Server is installed and the application has access to the database.
+Connection string example:
 
-Configure the connection string according to your environment.
-
-Example:
-
-```text
+```
 Server=YOUR_SERVER;
-Database=StudentDb;
+Database=StudentOrmDb;
 Trusted_Connection=True;
 TrustServerCertificate=True;
 ```
 
-Replace `YOUR_SERVER` with your SQL Server instance name.
+Replace `YOUR_SERVER` with your SQL Server instance.
 
 ---
 
@@ -268,70 +383,24 @@ Replace `YOUR_SERVER` with your SQL Server instance name.
 
 1. Clone the repository.
 2. Open the project in Visual Studio or Rider.
-3. Configure the SQL Server connection string.
-4. Create or update the database.
+3. Configure SQL Server connection.
+4. Apply migrations.
 5. Run the application.
-6. Select the desired operation from the console menu.
-
----
-
-# Key Concepts Demonstrated
-
-This project demonstrates practical usage of:
-
-* Database connection management
-* ORM configuration
-* Entity-to-table mapping
-* CRUD operations
-* Console input handling
-* SQL queries
-* Parameterized queries
-* Data retrieval
-* Record searching
-* Record updating
-* Record deletion
-* SQL pagination
-* `OFFSET`
-* `FETCH NEXT`
-
----
-
-# ORM Usage
-
-ORM is used in the project to work with database records as C# objects.
-
-In particular, **Task 3 — Get All Students** retrieves student records through ORM.
-
-Instead of manually processing rows with:
-
-```text
-SqlCommand
-ExecuteReader()
-SqlDataReader
-```
-
-the ORM maps the database rows directly to `Student` objects.
-
-This makes the code:
-
-* Cleaner
-* Easier to maintain
-* More readable
-* Less repetitive
 
 ---
 
 # Project Purpose
 
-The main goal of this project is to practice working with databases in a C# application and understand the differences between:
+The purpose of this project is to practice:
 
-* ORM-based database operations
-* Direct SQL / ADO.NET operations
-
-It also provides practical experience with CRUD operations and server-side pagination.
+- Building database-driven applications with C#
+- Working with Entity Framework Core
+- Understanding ORM relationships
+- Implementing CRUD architecture
+- Managing related entities using services
 
 ---
 
 ## Author
 
-Developed as a practical C# database assignment.
+Developed as a practical C# Entity Framework Core assignment.
