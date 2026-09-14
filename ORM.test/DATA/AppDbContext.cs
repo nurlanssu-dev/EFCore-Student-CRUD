@@ -6,6 +6,12 @@ namespace ORM.test.DATA;
 public class AppDbContext : DbContext
 {
     public DbSet<Student> Students { get; set; }
+    public DbSet<Group> Groups { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+    }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

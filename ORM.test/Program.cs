@@ -128,16 +128,48 @@ using ORM.test.Services;
 //}
 #endregion
 
-#region tasklarin service icinde yazilib methodlarin cagirildigi yer
-AppDbContext context = new AppDbContext();
+//#region tasklarin service icinde yazilib methodlarin cagirildigi yer
+appdbcontext context = new appdbcontext();
 
-var studentService = new StudentService(context);
+var studentservice = new studentservice(context);
 
-studentService.AddStudent("SNurlan", 28);
-studentService.GetStudentByName("SNurlan");
-studentService.GetAllStudents();
-studentService.UpdateStudentAge(1, 30);
-studentService.DeleteStudent(1);
-studentService.GetStudentsByPage(1);
+studentservice.addstudent("snurlan", 28, 1);
+//studentService.GetStudentByName("SNurlan");
+//studentService.GetAllStudents();
+//studentService.UpdateStudentAge(1, 30);
+//studentService.DeleteStudent(1);
+//studentService.GetStudentsByPage(1);
 
-#endregion
+
+
+//#endregion
+
+//AppDbContext context = new AppDbContext();
+
+//var group = new Group
+//{
+//    Name = "Frontend"
+//};
+
+//context.Groups.Add(group);
+//context.SaveChanges();
+
+//var student = new Student
+//{
+//    Name = "Vusal",
+//    Age = 22,
+//    GroupId = group.Id
+//};
+
+//context.Students.Add(student);
+//context.SaveChanges();
+
+//var students = context.Students
+//    .Include(s => s.Group)
+//    .ToList();
+
+//foreach (var s in students)
+//{
+//    Console.WriteLine($"{s.Name} - {s.Group.Name}");
+//}
+

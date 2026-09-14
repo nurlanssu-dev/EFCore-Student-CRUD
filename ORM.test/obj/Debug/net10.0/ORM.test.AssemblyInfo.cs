@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ORM.test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c6d1049ee3fea24d4f38621a0693e91776b56b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efcc26b828d7fb1a39224f73e3de8eef4c62ab57")]
 [assembly: System.Reflection.AssemblyProductAttribute("ORM.test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ORM.test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

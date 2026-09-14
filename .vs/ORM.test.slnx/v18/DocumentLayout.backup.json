@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914132027_AddFluentConfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ORM.test\\Migrations\\20260914132027_AddFluentConfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\data\\configurations\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\data\\configurations\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\orm.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\orm.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\data\\configurations\\groupconfiguraton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\data\\configurations\\groupconfiguraton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914130729_AddGroupRelationshipFluentAPI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ORM.test\\Migrations\\20260914130729_AddGroupRelationshipFluentAPI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\migrations\\20260914124114_addgrouptables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\migrations\\20260914124114_addgrouptables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914123408_AddGroupTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ORM.test\\Migrations\\20260914123408_AddGroupTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\migrations\\20260910125258_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\migrations\\20260910125258_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|c:\\users\\nurlan\\source\\repos\\orm.test\\orm.test\\orm.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B1DCC59A-2341-58AE-366E-3A7B8C5CB7EE}|ORM.test\\ORM.test.csproj|solutionrelative:orm.test\\orm.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\DATA\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ORM.test\\DATA\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\DATA\\AppDbContext.cs",
               "RelativeToolTip": "ORM.test\\DATA\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-10T12:30:51.444Z",
               "IsPinned": true,
@@ -52,33 +80,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "ORM.test\\Services\\StudentService.cs",
-              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Services\\StudentService.cs",
-              "RelativeToolTip": "ORM.test\\Services\\StudentService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCEAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20260914132027_AddFluentConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914132027_AddFluentConfigurations.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Migrations\\20260914132027_AddFluentConfigurations.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914132027_AddFluentConfigurations.cs",
+              "RelativeToolTip": "ORM.test\\Migrations\\20260914132027_AddFluentConfigurations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T20:18:41.253Z",
+              "WhenOpened": "2026-09-14T13:20:27.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Program.cs",
-              "RelativeDocumentMoniker": "ORM.test\\Program.cs",
-              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Program.cs*",
-              "RelativeToolTip": "ORM.test\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GroupConfiguraton.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\DATA\\Configurations\\GroupConfiguraton.cs",
+              "RelativeDocumentMoniker": "ORM.test\\DATA\\Configurations\\GroupConfiguraton.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\DATA\\Configurations\\GroupConfiguraton.cs",
+              "RelativeToolTip": "ORM.test\\DATA\\Configurations\\GroupConfiguraton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T12:23:16.527Z",
+              "WhenOpened": "2026-09-14T13:13:37.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\DATA\\Configurations\\StudentConfiguration.cs",
+              "RelativeDocumentMoniker": "ORM.test\\DATA\\Configurations\\StudentConfiguration.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\DATA\\Configurations\\StudentConfiguration.cs",
+              "RelativeToolTip": "ORM.test\\DATA\\Configurations\\StudentConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:10:26.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "20260914130729_AddGroupRelationshipFluentAPI.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914130729_AddGroupRelationshipFluentAPI.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Migrations\\20260914130729_AddGroupRelationshipFluentAPI.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914130729_AddGroupRelationshipFluentAPI.cs",
+              "RelativeToolTip": "ORM.test\\Migrations\\20260914130729_AddGroupRelationshipFluentAPI.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:07:29.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260914124114_AddGroupTables.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914124114_AddGroupTables.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Migrations\\20260914124114_AddGroupTables.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914124114_AddGroupTables.cs",
+              "RelativeToolTip": "ORM.test\\Migrations\\20260914124114_AddGroupTables.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T12:41:14.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260914123408_AddGroupTables.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914123408_AddGroupTables.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Migrations\\20260914123408_AddGroupTables.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260914123408_AddGroupTables.cs",
+              "RelativeToolTip": "ORM.test\\Migrations\\20260914123408_AddGroupTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T12:34:08.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Group.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Models\\Group.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Models\\Group.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Models\\Group.cs",
+              "RelativeToolTip": "ORM.test\\Models\\Group.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T12:28:58.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Models\\Student.cs",
+              "RelativeToolTip": "ORM.test\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:29:59.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "20260910125258_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Migrations\\20260910125258_InitialCreate.cs",
               "RelativeDocumentMoniker": "ORM.test\\Migrations\\20260910125258_InitialCreate.cs",
@@ -91,20 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "ORM.test\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Models\\Student.cs",
-              "RelativeToolTip": "ORM.test\\Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T12:29:59.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "ORM.test.csproj",
               "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\ORM.test.csproj",
               "RelativeDocumentMoniker": "ORM.test\\ORM.test.csproj",
@@ -113,6 +206,32 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-09-10T12:24:41.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Services\\StudentService.cs",
+              "RelativeToolTip": "ORM.test\\Services\\StudentService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwBAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T20:18:41.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Program.cs",
+              "RelativeDocumentMoniker": "ORM.test\\Program.cs",
+              "ToolTip": "C:\\Users\\Nurlan\\source\\repos\\ORM.test\\ORM.test\\Program.cs",
+              "RelativeToolTip": "ORM.test\\Program.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAkwJ8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:23:16.527Z",
               "EditorCaption": ""
             }
           ]

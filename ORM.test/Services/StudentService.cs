@@ -13,40 +13,61 @@ public class StudentService
         _context = context;
     }
 
-    public StudentService()
-    {
-    }
 
-    //Task 2 — Insert əməliyyatı
-    public void AddStudent(string name, int age)
+    // Add Student
+    public void AddStudent(string name, int age, int groupId)
     {
+        var group = _context.Groups
+            .FirstOrDefault(g => g.Id == groupId);
+
+        if (group == null)
+        {
+            Console.WriteLine("Group not found.");
+            return;
+        }
+
         var student = new Student
         {
             Name = name,
-            Age = age
+            Age = age,
+            GroupId = groupId
         };
+
         _context.Students.Add(student);
         _context.SaveChanges();
+
         Console.WriteLine("Student added successfully.");
     }
 
-    //Task 3 — Get All Students
+
+    // Get All Students
     public void GetAllStudents()
     {
-        var students = _context.Students.ToList();
+        var students = _context.Students
+            .Include(s => s.Group)
+            .ToList();
+
         foreach (var student in students)
         {
-            Console.WriteLine($"ID: {student.Id} StudentName: {student.Name} Age: {student.Age}");
+            Console.WriteLine(
+                $"ID: {student.Id} Name: {student.Name} Age: {student.Age} Group: {student.Group.Name}"
+            );
         }
     }
 
-    //Task 4 — Search Student
+
+    // Search Student
     public void GetStudentByName(string name)
     {
-        var student = _context.Students.FirstOrDefault(s => s.Name == name);
+        var student = _context.Students
+            .Include(s => s.Group)
+            .FirstOrDefault(s => s.Name == name);
+
         if (student != null)
         {
-            Console.WriteLine($"ID: {student.Id} StudentName: {student.Name} Age: {student.Age}");
+            Console.WriteLine(
+                $"ID: {student.Id} Name: {student.Name} Age: {student.Age} Group: {student.Group.Name}"
+            );
         }
         else
         {
@@ -54,15 +75,18 @@ public class StudentService
         }
     }
 
-    //Task 5 — Update Student
 
+    // Update Student Age
     public void UpdateStudentAge(int id, int newAge)
     {
-        var student = _context.Students.FirstOrDefault(s => s.Id == id);
+        var student = _context.Students
+            .FirstOrDefault(s => s.Id == id);
+
         if (student != null)
         {
             student.Age = newAge;
             _context.SaveChanges();
+
             Console.WriteLine("Student age updated successfully.");
         }
         else
@@ -71,14 +95,18 @@ public class StudentService
         }
     }
 
-    //Task 6 — Delete Student
+
+    // Delete Student
     public void DeleteStudent(int id)
     {
-        var student = _context.Students.FirstOrDefault(s => s.Id == id);
+        var student = _context.Students
+            .FirstOrDefault(s => s.Id == id);
+
         if (student != null)
         {
             _context.Students.Remove(student);
             _context.SaveChanges();
+
             Console.WriteLine("Student deleted successfully.");
         }
         else
@@ -87,21 +115,16 @@ public class StudentService
         }
     }
 
-    //Task 7 — Pagination
 
+    // Pagination
     public List<Student> GetStudentsByPage(int pageNumber)
     {
         int pageSize = 3;
 
-        int offset = (pageNumber - 1) * pageSize;
-
         return _context.Students
-            .FromSqlInterpolated($@"
-                SELECT * FROM Students
-                ORDER BY Id
-                OFFSET {offset} ROWS
-                FETCH NEXT {pageSize} ROWS ONLY")
+            .Include(s => s.Group)
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
             .ToList();
     }
-
 }
